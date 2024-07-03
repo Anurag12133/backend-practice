@@ -5,4 +5,6 @@ dotenv.config({
     path: "/.env",
 });
 
-connectionString();
+connectionString().then(() => {
+    console.log("connected successfully");
+});
